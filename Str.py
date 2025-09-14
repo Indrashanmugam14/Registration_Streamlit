@@ -49,11 +49,12 @@ def job_registration():
                         f.write(f"Preferred Roles: {', '.join(preferred_roles)}\n")
                         f.write(f"Resume File: {resume_filename}\n")
 
-                    st.success(f"🎉 {name} has been registered successfully!")
+                    st.success(f"{name} has been registered successfully!")
                     st.info(f"✅ Data saved in `{SAVE_FOLDER}` folder.")
 
     st.info("ℹ️ After registration, fill the form again to register another person.")
 
 if __name__ == '__main__':
     job_registration()
+
 
